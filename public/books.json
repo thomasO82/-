@@ -1,0 +1,74 @@
+[
+  {
+    "id": "dune",
+    "title": "Dune",
+    "author": "Frank Herbert",
+    "description": "Sur Arrakis, Paul Atréides découvre une planète désertique dont la ressource la plus précieuse attise toutes les convoitises."
+  },
+  {
+    "id": "frankenstein",
+    "title": "Frankenstein",
+    "author": "Mary Shelley",
+    "description": "Victor Frankenstein donne vie à une créature et doit affronter les conséquences de son expérience."
+  },
+  {
+    "id": "le-hobbit",
+    "title": "Le Hobbit",
+    "author": "J. R. R. Tolkien",
+    "description": "Bilbo quitte sa maison pour aider des nains à retrouver le royaume qu’un dragon leur a pris."
+  },
+  {
+    "id": "fondation",
+    "title": "Fondation",
+    "author": "Isaac Asimov",
+    "description": "Hari Seldon rassemble des savants pour préserver les connaissances alors que l’Empire galactique décline."
+  },
+  {
+    "id": "le-petit-prince",
+    "title": "Le Petit Prince",
+    "author": "Antoine de Saint-Exupéry",
+    "description": "Un aviateur échoué dans le désert rencontre un jeune voyageur venu d’une autre planète."
+  },
+  {
+    "id": "entretien-avec-un-vampire",
+    "title": "Entretien avec un vampire",
+    "author": "Anne Rice",
+    "description": "Louis raconte à un journaliste sa transformation en vampire et sa vie aux côtés de Lestat."
+  },
+  {
+    "id": "le-comte-de-monte-cristo",
+    "title": "Le Comte de Monte-Cristo",
+    "author": "Alexandre Dumas",
+    "description": "Emprisonné à tort, Edmond Dantès s’évade et revient sous une nouvelle identité pour se venger."
+  },
+  {
+    "id": "le-chien-des-baskerville",
+    "title": "Le Chien des Baskerville",
+    "author": "Arthur Conan Doyle",
+    "description": "Sherlock Holmes enquête sur une mort mystérieuse liée à la légende d’un chien fantôme."
+  },
+  {
+    "id": "voyage-au-centre-de-la-terre",
+    "title": "Voyage au centre de la Terre",
+    "author": "Jules Verne",
+    "description": "Un professeur et son neveu descendent dans un volcan islandais à la suite d’un message codé."
+  },
+  {
+    "id": "les-magiciens",
+    "title": "Les Magiciens",
+    "author": "Lev Grossman",
+    "description": "Quentin Coldwater découvre une école de magie et apprend que le monde de ses romans préférés existe."
+  },
+  {
+    "id": "la-maison-des-feuilles",
+    "title": "La Maison des feuilles",
+    "author": "Mark Z. Danielewski",
+    "description": "Une famille découvre que sa maison est plus grande à l’intérieur qu’à l’extérieur."
+  },
+  {
+    "id": "vingt-mille-lieues-sous-les-mers",
+    "title": "Vingt Mille Lieues sous les mers",
+    "author": "Jules Verne",
+    "description": "Le professeur Aronnax explore les océans à bord du Nautilus, commandé par le capitaine Nemo."
+  }
+]

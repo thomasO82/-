@@ -1,0 +1,23 @@
+body {
+  max-width: 42rem;
+  margin: 2rem auto;
+  padding: 0 1rem;
+  font: 1rem/1.6 system-ui, sans-serif;
+}
+
+nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  padding-bottom: 0.75rem;
+  border-bottom: 1px solid #ccc;
+}
+
+li {
+  margin: 0.5rem 0;
+}
+
+button {
+  font: inherit;
+  cursor: pointer;
+}
