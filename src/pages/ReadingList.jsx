@@ -1,6 +1,5 @@
 import { Link } from 'react-router-dom'
 import { selectBooks, selectRemoveBook, useReadingListStore } from '../stores/useReadingListStore'
-import ReadingSchedule from '../components/ReadingSchedule'
 
 export default function ReadingList() {
   const books = useReadingListStore(selectBooks)
@@ -14,13 +13,10 @@ export default function ReadingList() {
         {books.map((book) => (
           <li key={book.id}>
             <Link to={`/livres/${book.id}`}>{book.title}</Link>{' '}
-            <button type="button" onClick={() => removeBook(book.id)} aria-label={`Retirer ${book.title}`}>
-              Retirer
-            </button>
+            <button type="button" onClick={() => removeBook(book.id)}>Retirer</button>
           </li>
         ))}
       </ul>
-      <ReadingSchedule />
     </>
   )
 }

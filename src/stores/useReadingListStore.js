@@ -12,4 +12,3 @@ export const selectBookCount = (state) => state.books.length
 export const selectIsBookSaved = (id) => (state) => state.books.some((book) => book.id === id)
 export const selectAddBook = (state) => state.addBook
 export const selectRemoveBook = (state) => state.removeBook
-export const selectReadings = (state) => state.readings
