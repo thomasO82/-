@@ -2,17 +2,17 @@ import { useParams } from 'react-router-dom'
 import books from '../../public/books.json'
 import useToggle from '../hooks/useToggle'
 import ReadingDialog from '../components/ReadingDialog'
-import {
-  selectAddBook, selectIsBookSaved, selectRemoveBook, useReadingListStore,
-} from '../stores/useReadingListStore'
+import { useReadingListStore } from '../stores/useReadingListStore'
 
 export default function BookDetails() {
   const { id } = useParams()
   const [isOpen, toggle] = useToggle()
   const book = books.find((book) => book.id === id)
-  const isSaved = useReadingListStore(selectIsBookSaved(id))
-  const addBook = useReadingListStore(selectAddBook)
-  const removeBook = useReadingListStore(selectRemoveBook)
+  const isSaved = useReadingListStore((state) =>
+    state.books.some((book) => book.id === id),
+  )
+  const addBook = useReadingListStore((state) => state.addBook)
+  const removeBook = useReadingListStore((state) => state.removeBook)
 
   if (!book) return <p>Livre introuvable.</p>
 

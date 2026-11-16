@@ -2,11 +2,10 @@ import { Link, Route, Routes } from 'react-router-dom'
 import Catalog from './pages/Catalog'
 import BookDetails from './pages/BookDetails'
 import ReadingList from './pages/ReadingList'
-
-import { selectBookCount, useReadingListStore } from './stores/useReadingListStore'
+import { useReadingListStore } from './stores/useReadingListStore'
 
 export default function App() {
-  const bookCount = useReadingListStore(selectBookCount)
+  const bookCount = useReadingListStore((state) => state.books.length)
   return (
     <>
       <nav aria-label="Navigation principale">
