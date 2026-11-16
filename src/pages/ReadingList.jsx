@@ -1,9 +1,9 @@
 import { Link } from 'react-router-dom'
-import { useReadingListStore } from '../stores/useReadingListStore'
+import { selectBooks, selectRemoveBook, useReadingListStore } from '../stores/useReadingListStore'
 
 export default function ReadingList() {
-  const books = useReadingListStore((state) => state.books)
-  const removeBook = useReadingListStore((state) => state.removeBook)
+  const books = useReadingListStore(selectBooks)
+  const removeBook = useReadingListStore(selectRemoveBook)
 
   return (
     <>
