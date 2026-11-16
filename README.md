@@ -1,22 +1,10 @@
-# Mini-bibliothèque
+# Mini-bibliothèque — corrigé TD2
 
-Projet React en JavaScript à compléter pendant le cours.
+Le store Zustand.
 
 ```sh
-npm install
+npm ci
 npm run dev
 ```
 
-| Route | Page |
-| --- | --- |
-| `/` | Catalogue |
-| `/livres/dune` | Exemple de fiche à ouvrir directement pendant l’exercice |
-| `/liste` | Liste de lecture |
-
-## À compléter
-
-Le catalogue et les fiches lisent les 12 livres dans `public/books.json`.
-
-Crée un store Zustand pour la liste de lecture. Branche les boutons de la fiche
-et de la liste, puis affiche le compteur dans la navigation. Les commentaires
-`TODO` indiquent où intervenir.
+L’énoncé du TD est dans [TD.md](TD.md).

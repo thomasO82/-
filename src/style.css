@@ -5,10 +5,13 @@ body {
   font: 1rem/1.6 system-ui, sans-serif;
 }
 
-nav {
+nav, .actions {
   display: flex;
   flex-wrap: wrap;
   gap: 1rem;
+}
+
+nav {
   padding-bottom: 0.75rem;
   border-bottom: 1px solid #ccc;
 }
@@ -17,7 +20,19 @@ li {
   margin: 0.5rem 0;
 }
 
-button {
+button, input {
   font: inherit;
+}
+
+button {
   cursor: pointer;
+}
+
+dialog {
+  max-width: calc(100% - 2rem);
+  box-sizing: border-box;
+}
+
+dialog .actions {
+  margin-top: 1rem;
 }

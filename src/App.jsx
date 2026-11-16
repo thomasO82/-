@@ -3,14 +3,15 @@ import Catalog from './pages/Catalog'
 import BookDetails from './pages/BookDetails'
 import ReadingList from './pages/ReadingList'
 
-export default function App() {
-  // TODO Zustand : afficher le nombre de livres dans la liste.
+import { selectBookCount, useReadingListStore } from './stores/useReadingListStore'
 
+export default function App() {
+  const bookCount = useReadingListStore(selectBookCount)
   return (
     <>
       <nav aria-label="Navigation principale">
         <Link to="/">Catalogue</Link>
-        <Link to="/liste">Ma liste</Link>
+        <Link to="/liste">Ma liste ({bookCount})</Link>
       </nav>
       <main>
         <Routes>
