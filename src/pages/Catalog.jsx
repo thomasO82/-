@@ -4,16 +4,12 @@ import books from '../../public/books.json'
 
 export default function Catalog() {
   const [search, setSearch] = useState('')
-  const query = search.trim().toLowerCase()
-  const results = books.filter((book) => book.title.toLowerCase().includes(query))
+  const results = books
 
   return (
     <>
       <h1>Catalogue</h1>
-      <label>
-        Rechercher par titre{' '}
-        <input type="search" value={search} onChange={(event) => setSearch(event.target.value)} />
-      </label>
+      
       {results.length === 0 && <p>Aucun livre trouvé.</p>}
       <ul>
         {results.map((book) => (
